@@ -1,4 +1,6 @@
-public class  Funcion {
+package Tarea_3_p1;
+
+public class Funcion {
 
     public static int encontrar_numero(int numero){
         int mayor = 0;
