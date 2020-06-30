@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Tarea {
+public class tarea {
     public static void main(String [] args) {
         System.out.println("Ingrese el número para fijar el rango de búsqueda\n");
         Scanner numero = new Scanner(System.in);
