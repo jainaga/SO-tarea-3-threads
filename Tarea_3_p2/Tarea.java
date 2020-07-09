@@ -10,13 +10,14 @@ public class Tarea {
         int n = numero.nextInt();
         numero.close();
         final long startTime = System.nanoTime();
-        
-        
 
         int numero_hebras = 16;
+        int inicio = 1, tope= n/numero_hebras;
+
+        
+
         
         Hebras partes[] = new Hebras[numero_hebras];
-        int inicio = 1, tope= n/numero_hebras;
         for (int i = 0; i < numero_hebras; i++) {
             partes[i] = new Hebras(inicio, tope);
             partes[i].start();
