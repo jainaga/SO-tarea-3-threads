@@ -2,7 +2,7 @@ package Tarea_3_p1;
 
 public class Funcion {
 
-    public static int encontrar_numero(int numero){
+    public static int encontrar_numero(int numero){     //calculo del número en el rango con la mayor cantidad de divisores
         int mayor = 0;
         int cant_mayor = 0;
         for (int i = 1; i <= numero; i++){
@@ -17,6 +17,6 @@ public class Funcion {
                 mayor = i;
             }
         }
-        return mayor;
+        return mayor;           //se retorna el mayor encontrado 
     }
 }
