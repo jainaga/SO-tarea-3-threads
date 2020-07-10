@@ -1,22 +1,10 @@
+default: compile
 
-JFLAGS = -g
-JC = javac
-
-.SUFFIXES: .java .class
-
-.java.class:
-	$(JC) $(JFLAGS) $*.java
-
-CLASSES = \
-		  Tarea.java \
-		  Hebras.java 
-
-default: classes
-
-classes: $(CLASSES:.java=.class)
+compile: 
+	javac Tarea_3_p2/Tarea.java
 
 clean:
-	rm *.class
+	rm Tarea_3_p2/*.class
 	
 run:
-	java Tarea
+	java Tarea_3_p2/Tarea
